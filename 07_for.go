@@ -35,5 +35,20 @@ func main(){
 		fmt.Println(p)
 	}
 
-
+	fmt.Println("=============")
+	fmt.Println("If we list all the natural numbers beloe $10$ that are multiples of 3 or 5, we get 3, 5, 6$ and 9. The sum of these multiples is 23. ")
+	fmt.Println("Find the sum of all the multiples of 3 or 5 below 1000.")
+	number := 1000
+	x := 1
+	acco := 0
+	for (x < number){
+		if(x%3 == 0 ){
+			acco += x 
+		}else if (x%5 ==0){
+			acco += x 
+		}
+		x++
+	}
+	fmt.Println("respuesta: ", acco)
+	
 }
