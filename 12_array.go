@@ -26,15 +26,12 @@ func main(){
 	total  = 0
 	fmt.Println("Total: ",total)
 	fmt.Println("=================================")
-	for u:= 0; u<len(x) ; u++{
-		total += (x[u])	
+	for u:= 0; u<len(y) ; u++{
+		total += (y[u])	
 
 	}
-	fmt.Println("Suma: ",total)
-	fmt.Println("Promedio: ",total/5)
-	fmt.Println("len: ",len(x))
-	fmt.Println("i: ",i)
-	fmt.Println("Respuesta:",total/5 )
+	fmt.Printf("Suma: %.2f\n Promedio: %.2f\n len y: %d\n i:%d \n",total,total/5,len(y),i)
 
+	fmt.Println("=================================")
 	
 }
