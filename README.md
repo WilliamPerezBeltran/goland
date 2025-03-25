@@ -1,4 +1,4 @@
-# goland
+# golang
 
 go run <file.go>
 
