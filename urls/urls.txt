@@ -1,0 +1,14 @@
+https://go.dev/tour/list
+https://www.youtube.com/watch?v=Jn81GrdePh0&ab_channel=GustavoCastillo
+https://platzi.com/tutoriales/1030-go-avanzado/1823-librerias-frameworks-y-otras-cositas-con-go/
+https://www.youtube.com/watch?v=NS-3Tf8vPNk&ab_channel=GustavoCastillo
+https://golangr.com/exercises
+https://gobyexample.com/
+https://www.golang-book.com/
+https://www.golang-book.com/books/intro
+https://github.com/golang/go/wiki/GoUsers
+https://www.youtube.com/watch?v=NS-3Tf8vPNk&ab_channel=GustavoCastillo
+https://github.com/gustavocd
+https://gustavocd.dev/posts/go-cheat-sheet/
+https://gobyexample.com/
+https://www.golang-book.com/books/intro/6
