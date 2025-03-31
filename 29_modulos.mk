@@ -9,6 +9,11 @@ Resumen
 🔹 Todo lo que empieza con minúscula es privado.
 🔹 No hay protected, pero puedes usar getters/setters para control de acceso.
 
+
+Resumen
+🔹 Go solo tiene público y privado.
+🔹 Todo lo que empieza con mayúscula es export osea publico.
+
 ahora tenemos:
 	- go mod init <define elnombre del modulo>
 	go mod   => crea un archivo que se llama "go.mod" especificando la version que se tiene de golang 
