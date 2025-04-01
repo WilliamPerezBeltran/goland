@@ -1,0 +1,26 @@
+package main
+import (
+	"fmt"
+	"sync"
+)
+
+func he(name string wg *sync.WaitGroup){
+	defer wg.Done()
+	fmt.Println(name)
+}
+
+func main(){
+	var wg sync.WaitGroup
+	
+
+	fmt.Println("string")
+	wg.Add(1)
+	
+
+	go he("world")
+
+	wg.Wait()
+
+
+}
+
