@@ -12,3 +12,6 @@ https://github.com/gustavocd
 https://gustavocd.dev/posts/go-cheat-sheet/
 https://gobyexample.com/
 https://www.golang-book.com/books/intro/6
+https://github.com/golang/go
+https://go.dev/
+https://github.com/dariubs/GoBooks
