@@ -15,3 +15,8 @@ https://www.golang-book.com/books/intro/6
 https://github.com/golang/go
 https://go.dev/
 https://github.com/dariubs/GoBooks
+https://github.com/AllenDowney/LittleBookOfSemaphores/tree/master
+https://github.com/dariubs/GoBooks
+https://dzone.com/articles/try-and-catch-in-golang
+https://devhints.io/go
+https://platzi.com/home/clases/2232-programacion-golang/35764-cheat-sheet-go/
