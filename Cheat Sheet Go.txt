@@ -1,0 +1,248 @@
+=====================  init-hola mundo ===================== 
+
+* hola mundo 
+
+package main
+import "fmt"
+
+
+func main(){
+	fmt.Println("hola mundo")
+}
+
+
+
+=====================  init-hola mundo ===================== 
+
+* importar una libreria sin usarla 
+  Hacer únicamente cuando la librería externa lo pide explícitamente 
+	
+
+package main 
+import (
+	"fmt"
+	_ "math"
+
+)
+
+func main(){
+	fmt.Println("hola mundo")
+}
+
+
+=====================  init-hola mundo ===================== 
+
+* Agregar un alias a un import 
+package main
+import (
+	"fmt"
+	mth "math"
+	)
+
+
+func main(){
+	fmt.Println(mth.Pi)
+}
+
+
+
+=====================  declarar variables ===================== 
+
+* Diferentes formas de declarar variables
+
+v := 12 
+var v int = 12
+var v int 
+
+
+
+* Zero values de primitivos 
+
+
+var a int // 0 
+var b float64 // 0.0
+var c string // ""
+var b bool // false
+
+
+
+
+=====================  init-incremental y decremental ===================== 
+
+* Incremental y decremental 
+
+x ++
+y++ Agregar un alias a un import 
+x = x + 1 
+y = y + 1
+	
+
+
+
+=====================  init-imprimir tipo de variables incremental y decremental ===================== 
+
+* Imprimir tipos de variables 
+
+var myString string = ""
+fmt.Printf("strings %s",myString )
+
+var myInt int = 10
+fmt.Printf("int %d", myInt)
+
+
+var myBool bool = true
+fmt.Printf("myBool %t", myBool)
+
+
+a := 2
+fmt.Printf("a %T", a)
+
+
+
+=====================  init-errores  ===================== 
+
+* Función para tomar los errores(ahorra código)
+
+package main 
+import (
+	"fmt"
+	"strconv"
+	"log"
+)
+
+func main(){
+	_,err := strconv.Atoi("53a")
+	if e != nil{
+		log.Fatal
+	}
+}
+-----------------------------------
+package main 
+import (
+	"fmt"
+	"strconv"
+	"log"
+)
+
+func isError(e error){
+	if e != nil{
+		log.Fatal(e)
+	}
+}
+
+func main(){
+	_,err := strconv.Atoi("53a")
+	isError(err)
+}
+-----------------------------------
+	
+
+
+
+=====================  init-Array vs slice  ===================== 
+
+* Array vs slice
+//Array
+var mylist1[2]int
+
+
+//slice 
+var mylist2[]int
+
+
+
+=====================  init-slice de interfaces  ===================== 
+
+myList := []interface{"hola",23,23.34}	
+
+for _,value := range myList{
+	switch value.(type){
+		case int:
+			fmt.Println("Es int")
+		case string:
+			fmt.Println("Es string")
+		case float64:
+			fmt.Println("Es float")
+	}
+}
+
+
+
+
+=====================  init-key existe en el map ===================== 
+
+* Asegurarse si un key existe en el map  
+
+m := make(map[string]int)
+
+m["hola"] = 1
+
+value, ok := m["hello"]
+
+si existe sera la variable ok => true 
+si no existe sera la variable ok => false 
+es decir:
+
+
+if ok{
+	bla bla bla
+}
+
+
+=====================  init-punteros ===================== 
+
+* Punteros
+
+a := 10 => variable int
+b := &a => "b" es el puntero de a( b adquiere la direccion de memoria de a)
+c := *b => "c" adquiere el valor del puntero de "b" es decir toma el mismo valor de a 
+           (la desreferenciacion de b adquiere el valor de donde el valor de lo que haya en la direccion de memoria)  
+
+
+---------------------
+
+
+a := 10  // 'a' es una variable de tipo int con valor 10
+b := &a  // 'b' es un puntero a 'a' (almacena la dirección de memoria de 'a')
+c := *b  // 'c' obtiene el valor almacenado en la dirección de memoria a la que apunta 'b', es decir, el valor de 'a' (10)
+
+
+Correcciones y aclaraciones:
+
+"b adquiere la dirección de memoria de a" → Correcto, b almacena la dirección de a, no su valor.
+
+"c adquiere el valor del puntero de b" →  c obtiene el valor de la variable a la que b apunta, que en este caso es a.
+
+"La desreferenciación de b adquiere el valor de lo que haya en la dirección de memoria" → Correcto, desreferenciar (*b) significa acceder al valor almacenado en la dirección de memoria a la que b apunta.
+
+
+
+
+
+
+
+
+=====================  init-incremental y decremental ===================== 
+
+// Inicializar un proyecto
+go mod init path_del_proyecto
+
+// Verificar que el código externo no esté corrupto
+go mod verify
+
+// Reemplazar fuente del código
+go mod edit -replace path_del_repo_online=path_del_repo_en_local
+
+// Quitar el replace
+go mod edit -dropreplace path_del_repo_online
+
+// Empaquetar todo el código de terceros que usa nuestro código
+go mod vendor
+
+// Eliminar todos los paquetes externos que no estemos usando
+go mod tidy
+
+// Aprender más de go modules
+go help mod
+* Incremental y decremental 
+
