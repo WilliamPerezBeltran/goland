@@ -11,7 +11,7 @@ func (e Persona) saludar() string{
 }
 
 type Trabajador struct{
-	Persona
+	Persona // esto se llama compo anonimo
 	Empresa string
 }
 
