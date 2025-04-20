@@ -26,4 +26,6 @@ https://go.dev/
 https://play-with-go.dev/
 https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/integers
 
+https://github.com/akilans/golang-mini-projects
+https://github.com/LeHaGiaBao/Eleven-Golang-Projects
 
